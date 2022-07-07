@@ -13,29 +13,30 @@
 </head>
 <body>
     <a href="../index.html">Volver al inicio</a>
-        <form name="form">
+        <form id="form">
             <h3>Arte y literatura</h3>
             <fieldset>
               <legend id="Q1">¿Cuántos anillos fueron creados por Sauron para los Señores Enanos en el Señor de los
                 Anillos?</legend>
               <label for="1.1">5</label>
-              <input id="" type="radio" name="anillo" value="5">
+              <input id="1.1" type="radio" name="anillos" value="5">
         
               <label for="7">7</label>
               <input id="1.2" type="radio" name="anillos" value="7">
         
-              <label for="4">Ninguno(crisis del oro)</label>
+              <label for="ninguno">Ninguno(crisis del oro)</label>
               <input id="1.2" type="radio" name="anillos" value="crisis">
         
               <label for="8">8</label>
               <input id="1.3" type="radio" name="anillos" value="8">
+              <p id="errortext"></p>
             </fieldset>
             
             <h3>Ciencia y Tecnología</h3>
             <fieldset>
                 <legend id="Q2">¿Qué significan las siglas USB?</legend>
                 <label for="2.1">"Universal Serial Budget"</label>
-                <input id="2.1" type="radio" name="anillo" value="budget">
+                <input id="2.1" type="radio" name="usb" value="budget">
           
                 <label for="2.2">"Universal Serial Bus"</label>
                 <input id="2.3" type="radio" name="usb" value="bus">
@@ -45,22 +46,24 @@
           
                 <label for="2.4">"Universal Serial Bit"</label>
                 <input id="2.4" type="radio" name="usb" value="bit">
+                <p id="errortext"></p>
               </fieldset>
 
               <h3>Deportes</h3>
               <fieldset>
                 <legend id="Q3">¿Cuál es el deporte nacional de Japón?</legend>
                 <label for="3.1">"Karate"</label>
-                <input id="3.1" type="radio" name="usb" value="karate">
+                <input id="3.1" type="radio" name="japon" value="karate">
           
                 <label for="3.2">"Sumo"</label>
-                <input id="3.3" type="radio" name="usb" value="sumo">
+                <input id="3.3" type="radio" name="japon" value="sumo">
           
                 <label for="3.3">"Judo"</label>
-                <input id="3.3" type="radio" name="usb" value="Judo">
+                <input id="3.3" type="radio" name="japon" value="Judo">
           
                 <label for="3.4">"Jiu Jitsu"</label>
-                <input id="3.4" type="radio" name="usb" value="bit">
+                <input id="3.4" type="radio" name="japon" value="bit">
+                <p id="errortext"></p>
               </fieldset>
 
               <h3>Entretenimiento</h3>
@@ -77,6 +80,7 @@
           
                 <label for="4.4">"El Rey León"</label>
                 <input id="4.4" type="radio" name="pelicula" value="reyleon">
+                <p id="errortext"></p>
               </fieldset>
 
               <h3>Geografía</h3>
@@ -93,6 +97,7 @@
           
                 <label for="5.4">"Albertitos"</label>
                 <input id="5.4" type="radio" name="malaga" value="albertitos">
+                <p id="errortext"></p>
               </fieldset>
 
               <h3>Historia</h3>
@@ -106,14 +111,17 @@
           
                 <label for="6.3">"Múnich"</label>
                 <input id="6.3" type="radio" name="anafrank" value="munich">
+                <p id="errortext"></p>
           
                 <label for="6.4">"Albacete"</label>
                 <input id="6.4" type="radio" name="anafrank" value="albacete">
+                <p id="errortext"></p>
               </fieldset>
       
             <button type="submit">Enviar respuestas</button>
         </form>
 
     </form>
-</body>
+  <script src="./js/script.js"></script>
+  </body>
 </html>
