@@ -1,0 +1,7 @@
+body { height: 100vh; background-color: rgb(128, 147, 241); }
+form { display: flex; flex-flow: column wrap; place-content: center; align-items: stretch; height: 100vh; background-color: rgb(114, 221, 247); border-radius: 25px; margin-left: 60px; margin-right: 60px; margin-bottom: 60px; }
+h3 { font-family: "Permanent Marker", cursive; font-size: 16px; text-decoration: underline; }
+#btn { display: flex; flex-flow: row wrap; place-content: center; }
+button:hover { background-color: rgb(128, 147, 241); width: 40%; transition-duration: 2s; border-radius: 25px; }
+button { width: 40%; height: 30px; transition-duration: 0.6s; }
+legend { font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
