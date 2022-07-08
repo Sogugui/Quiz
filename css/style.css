@@ -1,20 +1,20 @@
 body {
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: rgb(128, 147, 241);
+    overflow: auto;
 }
 
 form {
     display: flex;
     flex-flow: column wrap;
     align-items: stretch;
-    height: 102vh;
     background-color: rgb(114, 221, 247);
     border-radius: 25px;
     margin: 10px;
     padding: 10px;
-    width: 355px;
-
-
+    width: 90%;
 }
 
 h3 {
@@ -46,7 +46,7 @@ legend {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-label{
+label {
     font-family: 'Merriweather', serif;
 }
 
@@ -61,7 +61,7 @@ label{
         border-radius: 25px;
         margin: 10px;
         padding: 10px;
-        width: 711px;
+        width: 90%;
         justify-content: space-between;
     }
 
@@ -98,10 +98,64 @@ label{
         border-radius: 25px;
         margin: 10px;
         padding: 10px;
-        width: 1045px;
+        width: 90%;
         justify-content: space-between;
         flex-direction: column;
         flex-wrap: nowrap;
+    }
+
+
+    #btn {
+        display: flex;
+        flex-flow: row wrap;
+        place-content: center;
+    }
+
+    button:hover {
+        background-color: rgb(128, 147, 241);
+        width: 40%;
+        transition-duration: 2s;
+        border-radius: 25px;
+    }
+
+    button {
+        width: 40%;
+        height: 30px;
+        transition-duration: 0.6s;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    legend {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-family: 'Merriweather', serif;
+        font-size: 18px;
+    }
+
+
+}
+
+/* MOBILE DESIGN*/
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    form {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: stretch;
+        background-color: rgb(114, 221, 247);
+        border-radius: 25px;
+        margin: 10px;
+        padding: 10px;
+        width: 90%;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow: auto;
     }
 
 
